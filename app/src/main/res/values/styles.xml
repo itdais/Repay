@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <!--<item name="android:textColorPrimary">@color/textColorPrimary</item>-->
+        <!--<item name="android:textColorSecondary">@color/textColorSecondary</item>-->
+        <item name="divider">@color/colorDivider</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+    <style name="DivisiveLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <style name="DivisiveLine_Vertical">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <style name="BtnNormal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/sel_btn_normal</item>
+    </style>
+
+</resources>

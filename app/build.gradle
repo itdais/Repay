@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        applicationId "com.itdais.repay"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+//supprt支持版本
+ext.support_version = '25.3.1'
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile "com.android.support:appcompat-v7:$support_version"
+    compile "com.android.support:design:$support_version"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'org.greenrobot:greendao:3.2.2' // add library
+    compile 'com.afollestad.material-dialogs:core:0.9.4.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}

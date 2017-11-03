@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_border_radius_5"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="提醒" />
+
+            <TextView
+                android:id="@+id/tv_remind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="每月"
+                android:textColor="@color/textColorPrimary" />
+        </LinearLayout>
+
+        <View
+            style="@style/DivisiveLine_Vertical"
+            android:layout_margin="8dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="日期" />
+
+            <TextView
+                android:id="@+id/tv_remind_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="2016-06-08"
+                android:textColor="@color/textColorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_border_radius_5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_money"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="还款金额"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="元" />
+            </LinearLayout>
+
+            <View
+                style="@style/DivisiveLine_Vertical"
+                android:layout_margin="8dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_cycle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="剩余"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="期" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/DivisiveLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="还款类型" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/ic_home"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="房贷"
+                    android:textColor="@color/textColorPrimary" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View style="@style/DivisiveLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="持卡人" />
+
+                <EditText
+                    android:id="@+id/tv_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/DivisiveLine_Vertical"
+                android:layout_margin="8dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="银行" />
+
+                <TextView
+                    android:id="@+id/tv_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="招商银行"
+                    android:textColor="@color/textColorPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/DivisiveLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text="银行卡号" />
+
+            <EditText
+                android:id="@+id/et_bankNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入"
+                android:inputType="number"
+                android:maxLength="24"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/DivisiveLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text="手机号" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/DivisiveLine" />
+
+        <EditText
+            android:id="@+id/et_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical|top"
+            android:hint="备注"
+            android:padding="16dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_border_radius_5"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_bank_cmb" />
+
+            <TextView
+                android:id="@+id/tv_bankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_bank"
+                android:text="招商银行"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_bankName"
+                android:layout_below="@+id/tv_bankName"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:text="信用卡" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="丁军伟"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View style="@style/DivisiveLine" android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:text="1231454645646546546546545"
+            android:id="@+id/tv_bankNumber"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="36dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/BtnNormal"
+        android:layout_margin="16dp"
+        android:text="保存" />
+
+</LinearLayout>
