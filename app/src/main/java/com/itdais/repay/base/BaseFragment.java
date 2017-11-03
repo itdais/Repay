@@ -26,9 +26,9 @@ import butterknife.Unbinder;
  * Created by fcl13761179064 on 2016/8/2.
  */
 public abstract class BaseFragment extends Fragment {
-    private Unbinder unbinder;
     private ProgressDialog progressDialog;
     protected BaseActivity mBaseActivity;
+    private Unbinder unbinder;
 
     @Override
     public void onAttach(Activity activity) {
@@ -48,13 +48,13 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(getLayoutId(), container, false);
-        unbinder = ButterKnife.bind(this, view);
         return view;
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        unbinder = ButterKnife.bind(this, view);
         initView(view);
         initListener();
     }
